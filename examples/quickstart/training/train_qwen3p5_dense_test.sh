@@ -4,7 +4,7 @@ set -xeuo pipefail
 # export NCCL_DEBUG=INFO
 MODEL_NAME=${MODEL_NAME:-"Qwen3.5-9B"}
 # MODEL_NAME=${MODEL_NAME:-"Qwen3-8B"}
-RUNTIME_DIR="${RUNTIME_DIR:-/data/xgq/projects/RLs/uni-agent/train_logs}"
+RUNTIME_DIR="${RUNTIME_DIR:-/data/xgq/projects/RLs/uni-agent-metastone/train_logs}"
 
 project_name=${PROJECT_NAME:-"Uni-Agent-${MODEL_NAME}-megatron"}
 exp_name=${EXP_NAME:-"$(date +%Y%m%d%H%M)_exp"}
@@ -13,7 +13,7 @@ MODEL_PATH=${MODEL_PATH:-"/data/xgq/models/Qwen/${MODEL_NAME}"}
 TRAIN_FILE=${TRAIN_FILE:-"/data/xgq/data/swe_agent/swe_bench_verified.parquet"}
 TEST_FILE=${TEST_FILE:-"/data/xgq/data/swe_agent/swe_bench_verified.parquet"}
 
-RUNTIME_ENV=${RUNTIME_ENV:-"/data/xgq/projects/RLs/uni-agent/examples/quickstart/training/runtime_env_local.yaml"}
+RUNTIME_ENV=${RUNTIME_ENV:-"/data/xgq/projects/RLs/uni-agent-metastone/examples/quickstart/training/runtime_env_local.yaml"}
 CKPTS_DIR=${CKPTS_DIR:-"${RUNTIME_DIR}/ckpts/${project_name}/${exp_name}"}
 AGENT_LOG_DIR=${AGENT_LOG_DIR:-"${RUNTIME_DIR}/logs/${project_name}/${exp_name}"}
 GPU_MEMORY_CSV=${GPU_MEMORY_CSV:-"${RUNTIME_DIR}/gpu_memory/${project_name}/${exp_name}/gpu_memory_by_step.csv"}
@@ -25,7 +25,7 @@ ROLLOUT_REQUEST_METRICS_CSV=${ROLLOUT_REQUEST_METRICS_CSV:-"$(dirname "${GPU_MEM
 # Run-wide task base (agent + sandbox + sampling), loaded from this YAML by
 # uni_agent.framework.task_runner.run_task and deep-merged onto each row's task.
 # Same file-path idea as the old agent_loop_config_path; new (task-config) schema.
-TASK_CONFIG=${TASK_CONFIG:-"/data/xgq/projects/RLs/uni-agent/examples/quickstart/training/task_config_mini_swe_agent_blackbox.yaml"}
+TASK_CONFIG=${TASK_CONFIG:-"/data/xgq/projects/RLs/uni-agent-metastone/examples/quickstart/training/task_config_mini_swe_agent_blackbox.yaml"}
 TOOL_PARSER=${TOOL_PARSER:-"qwen3_coder"}    # gateway tool-call parser; MUST match the model chat template
 # GATEWAY_COUNT=${GATEWAY_COUNT:-8}            # gateway actors fronting the engine
 # CONCURRENCY=${CONCURRENCY:-256}              # max in-flight rollout sessions (runner cap)

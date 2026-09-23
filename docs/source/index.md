@@ -3,7 +3,7 @@
 Uni-Agent is a framework for training long-horizon agents.
 
 [Get started](quickstart/installation.md){ .md-button .md-button--primary }
-[View on GitHub](https://github.com/verl-project/uni-agent){ .md-button }
+[View on GitHub](https://github.com/Flowersea37/uni-agent-metastone){ .md-button }
 
 <div class="grid cards ua-feature-grid" markdown>
 

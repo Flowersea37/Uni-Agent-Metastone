@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
-ROOT=${1:-/data/xgq/projects/RLs/uni-agent/train_logs/logs/Uni-Agent-Qwen3.5-2B-megatron/separate_async_Qwen3.5-2B_20260915_064236}
+ROOT=${1:-/data/xgq/projects/RLs/uni-agent-metastone/train_logs/logs/Uni-Agent-Qwen3.5-2B-megatron/separate_async_Qwen3.5-2B_20260915_064236}
 failures=0
 processed=0
 

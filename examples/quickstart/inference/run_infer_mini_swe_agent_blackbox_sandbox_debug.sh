@@ -12,7 +12,7 @@ set -euo pipefail
 DATA_PATH="${DATA_PATH:-/data/xgq/data/swe_agent/swe_bench_verified.parquet}"
 TASK_CONFIG="${TASK_CONFIG:-examples/quickstart/inference/task_config_mini_swe_agent_blackbox_sandbox_debug.yaml}"
 API_KEY="${API_KEY:-EMPTY}"
-LOG_DIR="${LOG_DIR:-/data/xgq/projects/RLs/uni-agent/logs}"
+LOG_DIR="${LOG_DIR:-/data/xgq/projects/RLs/uni-agent-metastone/logs}"
 LIMIT="${LIMIT:-1}"
 CONCURRENCY="${CONCURRENCY:-1}"
 BASE_URL="https://api.vectron.meta-stone.com/v1"

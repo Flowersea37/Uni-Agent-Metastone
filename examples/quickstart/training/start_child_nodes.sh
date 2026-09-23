@@ -14,7 +14,7 @@ for IP in "${WORKERS[@]}"; do
         docker start ${CONTAINER_NAME} >/dev/null
 
         docker exec ${CONTAINER_NAME} bash -lc '
-            cd /data/xgq/projects/RLs/uni-agent
+            cd /data/xgq/projects/RLs/uni-agent-metastone
             unset NCCL_IGNORE_NET_MISMATCH
 
             ray stop --force || true

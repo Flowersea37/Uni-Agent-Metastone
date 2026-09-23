@@ -33,7 +33,7 @@ The eight evaluation lengths are `8k`, `16k`, `32k`, `64k`, `128k`,
 Run every command below from the repository root:
 
 ```bash
-cd /path/to/uni-agent
+cd /path/to/uni-agent-metastone
 
 export CONDA_ENV_DIR=/path/to/conda/env
 export PYTHON_BIN="${CONDA_ENV_DIR}/bin/python3"

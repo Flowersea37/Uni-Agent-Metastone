@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent}
+REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent-metastone}
 RUNTIME_DIR=${RUNTIME_DIR:-"${REPO_ROOT}/train_logs"}
 MODEL_NAME=${MODEL_NAME:-Qwen3.5-9B}
 PROJECT_NAME=${PROJECT_NAME:-"Uni-Agent-${MODEL_NAME}-megatron"}

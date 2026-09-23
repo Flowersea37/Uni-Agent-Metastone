@@ -10,8 +10,8 @@ Start with the environment that matches your workflow, then add the task and san
 Clone the repository and enter its directory:
 
 ```bash
-git clone https://github.com/verl-project/uni-agent.git
-cd uni-agent
+git clone https://github.com/Flowersea37/uni-agent-metastone.git
+cd uni-agent-metastone
 ```
 
 For RL training, install the bundled `verl` source into your training environment:

@@ -15,7 +15,7 @@ def replace_once(source: str, old: str, new: str) -> str:
 
 
 def main() -> None:
-    repo = Path(os.environ.get("REPO_ROOT", "/data/xgq/projects/RLs/uni-agent"))
+    repo = Path(os.environ.get("REPO_ROOT", "/data/xgq/projects/RLs/uni-agent-metastone"))
     script = (repo / "examples/quickstart/training/train_qwen3p5_dense_test.sh").read_text()
     gpu_count = int(os.environ["BENCH_GPUS"])
     gpu_ids = ",".join(str(i) for i in range(gpu_count))

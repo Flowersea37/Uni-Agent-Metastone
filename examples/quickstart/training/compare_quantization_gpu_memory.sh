@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent}
+REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent-metastone}
 TRAIN_SCRIPT="${REPO_ROOT}/examples/quickstart/training/train_qwen3p5_dense_test.sh"
 ANALYZER="${REPO_ROOT}/tools/analyze_gpu_memory.py"
 ROLLOUT_ANALYZER="${REPO_ROOT}/tools/analyze_rollout_gpu_memory.py"
@@ -12,7 +12,7 @@ PROJECT_NAME=${PROJECT_NAME:-"Uni-Agent-${MODEL_NAME}-megatron"}
 COMPARISON_NAME=${COMPARISON_NAME:-"quant_memory_rollout_quantization_$(date +%Y%m%d_%H%M%S)"}
 RESULT_ROOT="${RUNTIME_DIR}/gpu_memory/comparisons/${COMPARISON_NAME}"
 TASK_CONFIG=${TASK_CONFIG:-"${REPO_ROOT}/examples/quickstart/training/task_config_mini_swe_agent_blackbox_benchmark.yaml"}
-# RESULT_ROOT="/data/xgq/projects/RLs/uni-agent/train_logs/gpu_memory/comparisons/quant_memory_20260909_100120"
+# RESULT_ROOT="/data/xgq/projects/RLs/uni-agent-metastone/train_logs/gpu_memory/comparisons/quant_memory_20260909_100120"
 STEPS=${STEPS:-10}
 RESPONSE_LENGTH=${MAX_RESPONSE_LENGTH:-32768}
 ROLLOUT_N=${N_RESP_PER_PROMPT:-8}

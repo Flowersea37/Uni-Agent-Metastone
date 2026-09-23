@@ -18,7 +18,7 @@ python3 examples/inference/parallel_infer_api.py \
     --base-url https://api.vectron.meta-stone.com/v1 \
     --model DeepSeek/DeepSeek-V4-Flash-0731 \
     --api-key "${API_KEY:?Set API_KEY in the environment}" \
-    --log-dir /data/xgq/projects/RLs/uni-agent/logs \
+    --log-dir /data/xgq/projects/RLs/uni-agent-metastone/logs \
     --concurrency 64 \
     --limit 4
 

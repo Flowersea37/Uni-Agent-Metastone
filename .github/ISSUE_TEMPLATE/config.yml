@@ -4,5 +4,5 @@ contact_links:
     url: https://uni-agent.readthedocs.io/en/latest/index.html
     about: Review installation, Task, Agent, Sandbox, Gateway, inference, and training guides.
   - name: Contribution guide
-    url: https://github.com/verl-project/uni-agent/blob/main/CONTRIBUTING.md
+    url: https://github.com/Flowersea37/uni-agent-metastone/blob/main/CONTRIBUTING.md
     about: Read the development workflow and pull request conventions before contributing.

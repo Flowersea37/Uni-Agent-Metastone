@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent}
+REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent-metastone}
 TRAIN_SCRIPT=${TRAIN_SCRIPT:-"${REPO_ROOT}/examples/quickstart/training/train_qwen3p5_dense_test.sh"}
 ANALYZER=${ANALYZER:-"${REPO_ROOT}/tools/analyze_async_mode_comparison.py"}
 RUNTIME_DIR=${RUNTIME_DIR:-"${REPO_ROOT}/train_logs"}

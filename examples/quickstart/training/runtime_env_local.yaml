@@ -11,7 +11,7 @@ pip:
 
 env_vars:
   NCCL_IB_DISABLE: "0"
-  PYTHONPATH: "/data/xgq/projects/RLs/uni-agent/verl:/data/xgq/projects/RLs/uni-agent"
+  PYTHONPATH: "/data/xgq/projects/RLs/uni-agent-metastone/verl:/data/xgq/projects/RLs/uni-agent-metastone"
   TORCH_NCCL_AVOID_RECORD_STREAMS: "1"
   CUDA_DEVICE_MAX_CONNECTIONS: "1"
   VLLM_DISABLE_COMPILE_CACHE: "1"

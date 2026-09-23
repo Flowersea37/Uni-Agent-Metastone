@@ -25,7 +25,7 @@
 可先在**head 容器内**做只读检查（按实际 IP 和路径替换）：
 
 ```bash
-cd /data/xgq/projects/RLs/uni-agent
+cd /data/xgq/projects/RLs/uni-agent-metastone
 nvidia-smi -L
 test -f /data/xgq/models/Qwen/Qwen3.5-9B/config.json
 test -f /data/xgq/models/Qwen/Qwen3.8-Flash-Next-FP8/config.json
@@ -85,14 +85,14 @@ HEAD_IP=174.1.59.5 \
 WORKER_IP=174.1.59.4 \
 WORKER_SSH=root@174.1.59.4 \
 NCCL_SOCKET_IFNAME=bond3 \
-bash /data/xgq/projects/RLs/uni-agent/examples/quickstart/training/opd/train_opd_multi_node_separate_megatron.sh
+bash /data/xgq/projects/RLs/uni-agent-metastone/examples/quickstart/training/opd/train_opd_multi_node_separate_megatron.sh
 ```
 
 例如要改成 TP=2、CP=2，并限制训练步数：
 
 ```bash
 MEGATRON_TP=2 MEGATRON_CP=2 TOTAL_TRAINING_STEPS=2 \
-bash /data/xgq/projects/RLs/uni-agent/examples/quickstart/training/opd/train_opd_multi_node_separate_megatron.sh
+bash /data/xgq/projects/RLs/uni-agent-metastone/examples/quickstart/training/opd/train_opd_multi_node_separate_megatron.sh
 ```
 
 如需直接传 Hydra 参数，可在脚本后追加，例如 `trainer.logger='["console"]'`。请先核实所传键在当前 verl 配置中存在。实际入口还固定启用 `separate_async`、Megatron、`k1` 蒸馏损失、policy gradient、异步 vLLM rollout 和 SWE-bench agent；改 Hydra 参数并不保证与启动阶段的资源设置一致。
@@ -108,7 +108,7 @@ bash /data/xgq/projects/RLs/uni-agent/examples/quickstart/training/opd/train_opd
 ray status
 curl -fsS http://174.1.59.5:8008/health
 docker logs --tail 100 opd_teacher_qwen38
-ls -lt /data/xgq/projects/RLs/uni-agent/logs/qwen3.5-9b-swe-agent-opd-megatron-*.log | head
+ls -lt /data/xgq/projects/RLs/uni-agent-metastone/logs/qwen3.5-9b-swe-agent-opd-megatron-*.log | head
 ```
 
 常见故障定位：

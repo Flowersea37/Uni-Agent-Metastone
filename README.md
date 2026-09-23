@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://uni-agent.readthedocs.io/en/latest/index.html"><img src="https://img.shields.io/badge/Documentation-6D28D9?style=flat-square" alt="Documentation"></a>
-  <a href="https://github.com/verl-project/uni-agent/stargazers"><img src="https://img.shields.io/github/stars/verl-project/uni-agent?style=flat-square&logo=github&label=Stars" alt="GitHub Stars"></a>
+  <a href="https://github.com/Flowersea37/uni-agent-metastone/stargazers"><img src="https://img.shields.io/github/stars/Flowersea37/uni-agent-metastone?style=flat-square&logo=github&label=Stars" alt="GitHub Stars"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-2563EB?style=flat-square" alt="Apache 2.0 License"></a>
 </p>
 
@@ -83,7 +83,7 @@ Training dynamics, asynchronous rollout performance, and reproducibility details
 
 ## Roadmap 🗺️
 
-See the [Uni-Agent 26Q3 Roadmap](https://github.com/verl-project/uni-agent/issues/79) for current priorities and planned work.
+See the [Uni-Agent 26Q3 Roadmap](https://github.com/Flowersea37/uni-agent-metastone/issues/79) for current priorities and planned work.
 
 ## Acknowledgement 🙏
 
@@ -101,7 +101,7 @@ If you find the project helpful, please cite:
   author       = {Yuyang Ding and Bo Wen and Xubo Cao and Zhiqiang Zhai and Guangming Sheng and Xibin Wu and Juntao Li and Min Zhang and Uni-Agent Contributors},
   title        = {Uni-Agent: Build, Run, and Train Agents at Scale},
   year         = {2026},
-  howpublished = {\url{https://github.com/verl-project/uni-agent}},
+  howpublished = {\url{https://github.com/Flowersea37/uni-agent-metastone}},
   note         = {GitHub repository. Supervisor: Xibin Wu and Juntao Li},
   urldate      = {2026-03-27}
 }

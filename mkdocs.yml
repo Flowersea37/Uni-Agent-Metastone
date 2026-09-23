@@ -1,8 +1,8 @@
 site_name: Uni-Agent Docs
 site_description: Build, run, and train long-horizon agents at scale.
 site_url: https://uni-agent.readthedocs.io/en/latest/
-repo_name: verl-project/uni-agent
-repo_url: https://github.com/verl-project/uni-agent
+repo_name: Flowersea37/uni-agent-metastone
+repo_url: https://github.com/Flowersea37/uni-agent-metastone
 edit_uri: edit/main/docs/source/
 copyright: Copyright &copy; 2026 Uni-Agent Contributors
 
@@ -97,7 +97,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/verl-project/uni-agent
+      link: https://github.com/Flowersea37/uni-agent-metastone
 
 watch:
   - assets

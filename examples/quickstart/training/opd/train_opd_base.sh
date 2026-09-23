@@ -6,7 +6,7 @@
 
 set -xeuo pipefail
 
-REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent}
+REPO_ROOT=${REPO_ROOT:-/data/xgq/projects/RLs/uni-agent-metastone}
 cd "${REPO_ROOT}"
 export PYTHONPATH="${REPO_ROOT}/verl:${REPO_ROOT}${PYTHONPATH:+:${PYTHONPATH}}"
 
@@ -15,7 +15,7 @@ STUDENT_MODEL=${STUDENT_MODEL:-/data/xgq/models/Qwen/Qwen3.5-4B}
 TEACHER_MODEL=${TEACHER_MODEL:-/data/xgq/models/Qwen/Qwen3.5-35B-A3B}
 TRAIN_FILE=${TRAIN_FILE:-/data/xgq/data/swe_agent/swe_bench_verified.parquet}
 VAL_FILE=${VAL_FILE:-/data/xgq/data/swe_agent/swe_bench_verified.parquet}
-TASK_CONFIG=${TASK_CONFIG:-/data/xgq/projects/RLs/uni-agent/examples/quickstart/training/task_config_mini_swe_agent_blackbox.yaml}
+TASK_CONFIG=${TASK_CONFIG:-/data/xgq/projects/RLs/uni-agent-metastone/examples/quickstart/training/task_config_mini_swe_agent_blackbox.yaml}
 
 # Ray resources. Teacher GPUs are a dedicated resource pool, in addition to
 # trainer.nnodes * trainer.n_gpus_per_node.
@@ -87,7 +87,7 @@ SAVE_FREQ=${SAVE_FREQ:-10}
 TEST_FREQ=${TEST_FREQ:-10}
 PROJECT_NAME=${PROJECT_NAME:-Uni-Agent-Qwen3.5-9B-swe-agent-opd-fsdp}
 EXPERIMENT_NAME=${EXPERIMENT_NAME:-"$(date +%Y%m%d%H%M)_exp"}
-RUNTIME_DIR=${RUNTIME_DIR:-/data/xgq/projects/RLs/uni-agent/train_logs}
+RUNTIME_DIR=${RUNTIME_DIR:-/data/xgq/projects/RLs/uni-agent-metastone/train_logs}
 CKPTS_DIR=${CKPTS_DIR:-${RUNTIME_DIR}/ckpts/${PROJECT_NAME}/${EXPERIMENT_NAME}}
 AGENT_LOG_DIR=${AGENT_LOG_DIR:-${RUNTIME_DIR}/logs/${PROJECT_NAME}/${EXPERIMENT_NAME}}
 

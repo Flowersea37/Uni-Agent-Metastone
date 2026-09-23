@@ -182,7 +182,7 @@ After defining MyAgentLoopManager, you can set the agent loop manager class in c
 I want to train my model with Claude code/Codex/Trae etc, how do I integrate these agent frameworks in blackbox?
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-We have launched a sub-project: `verl-project/uni-agent <https://github.com/verl-project/uni-agent>`_, in which we provide an agent gateway:
+We have launched a sub-project: `Flowersea37/uni-agent-metastone <https://github.com/Flowersea37/uni-agent-metastone>`_, in which we provide an agent gateway:
 
 - **Message API**: Provide OpenAI ``/v1/chat/completions`` and Anthropic ``/v1/messages`` compatible API
 - **Token-in-token-out**: encode ``user,tool`` messages into token ids and request LLM server, decode response ids and parsing tools into ``assistant`` messages
@@ -192,7 +192,7 @@ We have launched a sub-project: `verl-project/uni-agent <https://github.com/verl
 For more details, see:
 
 - `Agent Gateway RFC <https://github.com/verl-project/verl/issues/5790>`_
-- `Agent Gateway Implementation <https://github.com/verl-project/uni-agent/tree/main/uni_agent/gateway>`_
+- `Agent Gateway Implementation <https://github.com/Flowersea37/uni-agent-metastone/tree/main/uni_agent/gateway>`_
 
 Training/Inference Framework Developer
 --------------------------------------

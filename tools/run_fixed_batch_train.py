@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 def main() -> None:
-    repo = Path(os.environ.get("REPO_ROOT", "/data/xgq/projects/RLs/uni-agent"))
+    repo = Path(os.environ.get("REPO_ROOT", "/data/xgq/projects/RLs/uni-agent-metastone"))
     source = repo / "examples/quickstart/training/train_qwen3p5_dense_test.sh"
     script = source.read_text(encoding="utf-8")
     old = "python3 -m verl.trainer.main_ppo"
