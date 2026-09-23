@@ -1,0 +1,17 @@
+- name: swe_bench
+  sandbox:
+    provider: docker
+    runtime_timeout: 7200
+  agent:
+    name: mini_swe_agent_blackbox
+    working_dir: /testbed
+    # Short, repeatable performance benchmark.  The production task config is
+    # unchanged; this cap prevents one SWE task from dominating a comparison.
+    step_limit: 40
+    command_timeout: 180
+    agent_timeout: 3600
+    model:
+      temperature: 0.0
+      top_p: 1.0
+      max_total_tokens: 65536
+      max_tokens_per_turn: 4096

@@ -1,0 +1,17 @@
+- name: swe_bench
+  sandbox:
+    provider: docker
+    runtime_timeout: 7200
+  agent:
+    name: mini_swe_agent_blackbox
+    # name: react
+    working_dir: /testbed
+    step_limit: 100
+    command_timeout: 180
+    agent_timeout: 3600
+    model:
+      temperature: 0.8
+      top_p: 0.9
+      max_total_tokens: 65536
+      max_tokens_per_turn: 4096
+      # max_model_len: 32768

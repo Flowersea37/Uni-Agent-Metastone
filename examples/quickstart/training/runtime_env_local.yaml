@@ -1,0 +1,19 @@
+# Single-node runtime environment. Code is bind-mounted at the same absolute
+# path for the Ray driver and workers, so avoid uploading the 100+ GiB repo to
+# GCS as a working_dir package.
+pip:
+  packages:
+    - "modal"
+    # Required by verl.checkpoint_engine.nccl_checkpoint_engine. Without it,
+    # verl's optional import leaves the "nccl" backend unregistered.
+    # - "cupy-cuda12x"
+  pip_check: false
+
+env_vars:
+  NCCL_IB_DISABLE: "0"
+  PYTHONPATH: "/data/xgq/projects/RLs/uni-agent/verl:/data/xgq/projects/RLs/uni-agent"
+  TORCH_NCCL_AVOID_RECORD_STREAMS: "1"
+  CUDA_DEVICE_MAX_CONNECTIONS: "1"
+  VLLM_DISABLE_COMPILE_CACHE: "1"
+  SSL_CERT_FILE: "/etc/ssl/certs/ca-certificates.crt"
+  REQUESTS_CA_BUNDLE: "/etc/ssl/certs/ca-certificates.crt"

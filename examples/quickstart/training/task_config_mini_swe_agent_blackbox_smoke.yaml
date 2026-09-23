@@ -1,0 +1,15 @@
+- name: swe_bench
+  sandbox:
+    provider: docker
+    runtime_timeout: 900
+  agent:
+    name: mini_swe_agent_blackbox
+    working_dir: /testbed
+    step_limit: 5
+    command_timeout: 180
+    agent_timeout: 600
+    model:
+      temperature: 0.0
+      top_p: 1.0
+      max_total_tokens: 16384
+      max_tokens_per_turn: 4096
